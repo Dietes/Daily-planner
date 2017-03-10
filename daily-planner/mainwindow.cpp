@@ -4,14 +4,17 @@
 #include<QPushButton>
 #include<QFileDialog>
 #include<QTextStream>
+#include<QAction>
+#include<QSettings>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    setWindowTitle("日程管理");
+    setWindowTitle("备忘录");
 }
+
 
 MainWindow::~MainWindow()
 {

@@ -2,6 +2,7 @@
 #include <QApplication>
 #include <QTextCodec>
 #include "logindlg.h"
+#include "signup.h"
 
 int main(int argc, char *argv[])
 {
