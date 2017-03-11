@@ -4,6 +4,10 @@
 #include <QDialog>
 #include<signup.h>
 #include<QMessageBox>
+#include <QString>
+#include <QSettings>
+#include <QtSql/QSqlRecord>
+#include <windows.h>
 
 namespace Ui {
 class Dialog;
@@ -16,6 +20,7 @@ class Dialog : public QDialog
 public:
     explicit Dialog(QWidget *parent = 0);
     ~Dialog();
+
 
 private slots:
     void on_signinBtn_clicked();

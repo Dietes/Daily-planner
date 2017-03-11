@@ -1,5 +1,6 @@
 ﻿#include "signup.h"
 #include "ui_signup.h"
+#include <windows.h>
 
 signup::signup(QWidget *parent) :
     QDialog(parent),
@@ -12,6 +13,20 @@ signup::signup(QWidget *parent) :
 signup::~signup()
 {
     delete ui;
+}
+
+void signup::setProperty(QString key,QString value)
+{
+    QString fileName="config.ini";
+    QSettings *settings=new QSettings(fileName,QSettings::IniFormat);
+    settings->setValue(key,value);
+}
+
+QString signup::getProperty(QString key)
+{
+    QString fileName="config.ini";
+    QSettings *settings=new QSettings(fileName,QSettings::IniFormat);
+    return settings->value(key," ").toString();
 }
 
 void signup::on_signupokBtn_clicked()
@@ -34,7 +49,12 @@ void signup::on_signupokBtn_clicked()
 
     else
     {
+        QString key=ui->usrlineEdit->text();
+        QString value=ui->pwdlineEdit->text();
+        setProperty(key,value);
         QMessageBox::information(this, tr("恭喜"),tr("注册成功！"),QMessageBox::Ok);
         close();
     }
 }
+
+

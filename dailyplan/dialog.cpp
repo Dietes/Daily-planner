@@ -16,18 +16,26 @@ Dialog::~Dialog()
 }
 
 void Dialog::on_signinBtn_clicked()
-{
-    if(ui->usrLine->text().trimmed()=="admin"
-            &&ui->pwdLine->text()=="admin")
-    {
-        accept();
+{    
+        QString usrkey=ui->usrLine->text().trimmed();
+        QString pwdvalue=ui->pwdLine->text();
+        QString pwdvalue1=signup::getProperty(usrkey);
+
+        if(usrkey.isEmpty()||pwdvalue.isEmpty())
+        {
+            QMessageBox::warning(this,"警告","请输入用户信息！",QMessageBox::Ok);
+        }
+        else if(pwdvalue==pwdvalue1)
+        {
+            accept();
+        }
+        else
+        {
+            QMessageBox::warning(this,"警告","用户名或密码错误！",QMessageBox::Ok);
+        }
+        ui->usrLine->setFocus();
+        ui->pwdLine->clear();
     }
-    else {
-        QMessageBox::warning(this,"警告","用户名或密码错误！",QMessageBox::Ok);
-    }
-    ui->usrLine->setFocus();
-    ui->pwdLine->clear();
-}
 
 void Dialog::on_signupBtn_clicked()
 {

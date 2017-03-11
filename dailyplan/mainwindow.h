@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QMessageBox>
+#include <windows.h>
 
 namespace Ui {
 class MainWindow;
