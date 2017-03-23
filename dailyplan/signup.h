@@ -5,8 +5,8 @@
 #include <QMessageBox>
 #include <QString>
 #include <QSettings>
-#include <QtSql/QSqlTableModel>
-#include <QDebug>
+#include <QFileDialog>
+#include <QFile>
 
 namespace Ui {
 class signup;
@@ -21,12 +21,18 @@ public:
     ~signup();
     void setProperty(QString key,QString value);
     static QString getProperty(QString key);
+    void newFile(QString fileName1);
+//    static void saveFile(QString fileName2);
+//    void onUsrkey(QString usrkey);
+    static QString usrkey;
+    QString usrvalue;
 
 private slots:
     void on_signupokBtn_clicked();
 
 private:
     Ui::signup *ui;
+    QString FN;
 };
 
 #endif // SIGNUP_H

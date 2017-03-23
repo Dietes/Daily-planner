@@ -13,7 +13,18 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="writeEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>551</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
@@ -39,14 +50,6 @@
    <addaction name="separator"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="action_save">
-   <property name="text">
-    <string>保存</string>
-   </property>
-   <property name="toolTip">
-    <string>保存</string>
-   </property>
-  </action>
   <action name="action_del">
    <property name="text">
     <string>删除</string>
@@ -61,6 +64,14 @@
    </property>
    <property name="toolTip">
     <string>版本说明</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存</string>
    </property>
   </action>
  </widget>

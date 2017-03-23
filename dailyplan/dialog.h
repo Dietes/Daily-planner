@@ -6,7 +6,6 @@
 #include<QMessageBox>
 #include <QString>
 #include <QSettings>
-#include <QtSql/QSqlRecord>
 #include <windows.h>
 
 namespace Ui {

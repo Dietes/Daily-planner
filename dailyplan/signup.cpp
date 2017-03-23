@@ -29,6 +29,15 @@ QString signup::getProperty(QString key)
     return settings->value(key," ").toString();
 }
 
+void signup::newFile(QString fileName1)
+{
+    QString fileN=QDir::currentPath()+fileName1+".txt";
+    QFile file(fileN);
+    file.open(QIODevice::WriteOnly | QIODevice::Text );
+}
+
+QString signup::usrkey;
+
 void signup::on_signupokBtn_clicked()
 {
     QString usrinput=ui->usrlineEdit->text();
@@ -49,10 +58,11 @@ void signup::on_signupokBtn_clicked()
 
     else
     {
-        QString key=ui->usrlineEdit->text();
-        QString value=ui->pwdlineEdit->text();
-        setProperty(key,value);
+        usrkey=ui->usrlineEdit->text();
+        usrvalue=ui->pwdlineEdit->text();
+        setProperty(usrkey,usrvalue);
         QMessageBox::information(this, tr("恭喜"),tr("注册成功！"),QMessageBox::Ok);
+        newFile(usrkey);
         close();
     }
 }
