@@ -9,6 +9,8 @@ int main(int argc, char *argv[])
     Dialog loginbox;
    if(loginbox.exec()==QDialog::Accepted)
    {
+ //   w.loadFile(QDir::currentPath()+signup::usrkey+".txt");
+    w.loadFile(QDir::currentPath()+Dialog::usrkeyinput+".txt");
     w.show();
     return a.exec();
    }

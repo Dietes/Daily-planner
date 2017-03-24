@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>572</width>
+    <width>570</width>
     <height>401</height>
    </rect>
   </property>
@@ -18,9 +18,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>0</y>
       <width>551</width>
-      <height>71</height>
+      <height>321</height>
      </rect>
     </property>
    </widget>
@@ -30,7 +30,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>572</width>
+     <width>570</width>
      <height>26</height>
     </rect>
    </property>
@@ -44,20 +44,10 @@
    </attribute>
    <addaction name="action_save"/>
    <addaction name="separator"/>
-   <addaction name="action_del"/>
-   <addaction name="separator"/>
    <addaction name="action_edi"/>
    <addaction name="separator"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="action_del">
-   <property name="text">
-    <string>删除</string>
-   </property>
-   <property name="toolTip">
-    <string>删除</string>
-   </property>
-  </action>
   <action name="action_edi">
    <property name="text">
     <string>版本说明</string>

@@ -21,10 +21,10 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    //测试
-//    void newFile();
-//    bool maybeSave();
+
     void saveFile(QString fileName2);
+    static void toload(QString fileName);
+    void loadFile(QString fileName);
 
 private slots:
     void on_action_save_triggered();

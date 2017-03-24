@@ -15,19 +15,22 @@ Dialog::~Dialog()
     delete ui;
 }
 
+//test
+QString Dialog::usrkeyinput;
+
 void Dialog::on_signinBtn_clicked()
 {    
-        QString usrkey=ui->usrLine->text().trimmed();
+        usrkeyinput=ui->usrLine->text().trimmed();
         QString pwdvalue=ui->pwdLine->text();
-        QString pwdvalue1=signup::getProperty(usrkey);
+        QString pwdvalue1=signup::getProperty(usrkeyinput);
 
-        if(usrkey.isEmpty()||pwdvalue.isEmpty())
+        if(usrkeyinput.isEmpty()||pwdvalue.isEmpty())
         {
             QMessageBox::warning(this,"警告","请输入用户信息！",QMessageBox::Ok);
         }
         else if(pwdvalue==pwdvalue1)
         {
-            accept();
+            accept();           
         }
         else
         {

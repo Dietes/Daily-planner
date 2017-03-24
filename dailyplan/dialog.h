@@ -7,6 +7,7 @@
 #include <QString>
 #include <QSettings>
 #include <windows.h>
+#include <mainwindow.h>
 
 namespace Ui {
 class Dialog;
@@ -19,11 +20,11 @@ class Dialog : public QDialog
 public:
     explicit Dialog(QWidget *parent = 0);
     ~Dialog();
+    static QString usrkeyinput;
 
 
 private slots:
     void on_signinBtn_clicked();
-
     void on_signupBtn_clicked();
 
 private:

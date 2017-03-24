@@ -66,5 +66,3 @@ void signup::on_signupokBtn_clicked()
         close();
     }
 }
-
-

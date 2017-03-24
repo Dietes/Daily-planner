@@ -22,8 +22,6 @@ public:
     void setProperty(QString key,QString value);
     static QString getProperty(QString key);
     void newFile(QString fileName1);
-//    static void saveFile(QString fileName2);
-//    void onUsrkey(QString usrkey);
     static QString usrkey;
     QString usrvalue;
 
