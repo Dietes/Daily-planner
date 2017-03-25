@@ -7,6 +7,8 @@
 #include <QSettings>
 #include <QFileDialog>
 #include <QFile>
+#include <QMouseEvent>
+#include <message.h>
 
 namespace Ui {
 class signup;

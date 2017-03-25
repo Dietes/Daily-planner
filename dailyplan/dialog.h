@@ -8,6 +8,8 @@
 #include <QSettings>
 #include <windows.h>
 #include <mainwindow.h>
+#include <QMouseEvent>
+#include <message.h>
 
 namespace Ui {
 class Dialog;
@@ -21,6 +23,10 @@ public:
     explicit Dialog(QWidget *parent = 0);
     ~Dialog();
     static QString usrkeyinput;
+
+//test
+//void paintEvent(QPaintEvent* event);
+//bool nativeEvent(const QByteArray&eventType, void *message, long *result);
 
 
 private slots:

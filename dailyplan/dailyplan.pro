@@ -28,12 +28,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         mainwindow.cpp \
     dialog.cpp \
-    signup.cpp
+    signup.cpp \
+    message.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
-    signup.h
+    signup.h \
+    message.h
 
 FORMS    += mainwindow.ui \
     dialog.ui \
-    signup.ui
+    signup.ui \
+    message.ui \
+    warnningbox.ui
+
+RESOURCES += \
+    ../sources/resource.qrc
+
+DISTFILES +=

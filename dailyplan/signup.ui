@@ -6,115 +6,101 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>450</width>
+    <height>389</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/myjpg/ubg.jpg);
+</string>
+  </property>
   <widget class="QPushButton" name="signupokBtn">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>220</y>
+     <x>170</x>
+     <y>320</y>
      <width>111</width>
-     <height>28</height>
+     <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/myjpg/signup.jpg);</string>
+   </property>
    <property name="text">
-    <string>注册</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="signupclBtn">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>220</y>
-     <width>111</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>取消</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>70</y>
-     <width>71</width>
+     <x>420</x>
+     <y>10</y>
+     <width>21</width>
      <height>21</height>
     </rect>
    </property>
-   <property name="text">
-    <string>用户名：</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>110</y>
-     <width>71</width>
-     <height>20</height>
-    </rect>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/myjpg/close3.png);</string>
    </property>
    <property name="text">
-    <string>密码：</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>150</y>
-     <width>101</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>重复输入密码：</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLineEdit" name="usrlineEdit">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>70</y>
-     <width>161</width>
-     <height>21</height>
+     <x>20</x>
+     <y>100</y>
+     <width>401</width>
+     <height>51</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/myjpg/2line.jpg);</string>
+   </property>
    <property name="placeholderText">
-    <string>请输入用户名</string>
+    <string>Plese enter your Account</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="pwdlineEdit">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>110</y>
-     <width>161</width>
-     <height>21</height>
+     <x>20</x>
+     <y>170</y>
+     <width>401</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/myjpg/2line.jpg);</string>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Please enter the Password</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="pwdlineEdit2">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>150</y>
-     <width>161</width>
-     <height>21</height>
+     <x>20</x>
+     <y>240</y>
+     <width>401</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/myjpg/2line.jpg);</string>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Please enter the Password again</string>
    </property>
   </widget>
  </widget>
