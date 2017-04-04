@@ -5,13 +5,18 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
+   // MainWindow w;
     Dialog loginbox;
-   if(loginbox.exec()==QDialog::Accepted)
+   loginbox.exec();
+
+    /*
+    if(loginbox.exec()==QDialog::Accepted)
    {
     w.loadFile(Dialog::usrkeyinput+".txt");
     w.show();
     return a.exec();
    }
-   else return 0;
+    else return 0;
+*/
+   return a.exec();
 }

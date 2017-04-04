@@ -14,7 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/myjpg/MBOX.jpg);</string>
+   <string notr="true">border-image: url(:/myjpg/MesBox.jpg);</string>
   </property>
   <widget class="QPushButton" name="okbtn">
    <property name="geometry">

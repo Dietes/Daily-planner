@@ -29,18 +29,23 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     dialog.cpp \
     signup.cpp \
-    message.cpp
+    message.cpp \
+    lgoutwarn.cpp \
+    savewarn.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
     signup.h \
-    message.h
+    message.h \
+    lgoutwarn.h \
+    savewarn.h
 
 FORMS    += mainwindow.ui \
     dialog.ui \
     signup.ui \
     message.ui \
-    warnningbox.ui
+    lgoutwarn.ui \
+    savewarn.ui
 
 RESOURCES += \
     ../sources/resource.qrc

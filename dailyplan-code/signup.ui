@@ -14,7 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/myjpg/ubg.jpg);
+   <string notr="true">border-image: url(:/myjpg/upbg3.jpg);
 </string>
   </property>
   <widget class="QPushButton" name="signupokBtn">
